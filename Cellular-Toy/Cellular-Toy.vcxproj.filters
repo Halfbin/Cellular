@@ -6,10 +6,16 @@
     <ClCompile Include="Syncer.cpp">
       <Filter>Syncer</Filter>
     </ClCompile>
+    <ClCompile Include="Kernel.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Syncer">
       <UniqueIdentifier>{88c0ecda-0ed9-417b-83a4-4500818f6a88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kernel">
+      <UniqueIdentifier>{70a65b34-6c3a-453f-8dd7-aed53fe80e51}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -17,6 +23,11 @@
       <Filter>Syncer</Filter>
     </ClInclude>
     <ClInclude Include="SimTime.hpp" />
-    <ClInclude Include="Clock.hpp" />
+    <ClInclude Include="Clock.hpp">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Kernel.hpp">
+      <Filter>Kernel</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
