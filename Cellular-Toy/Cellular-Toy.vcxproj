@@ -81,6 +81,14 @@
     <ClInclude Include="Syncer.hpp" />
     <ClInclude Include="SimTime.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rk-Core\Rk-Core\Rk-Core.vcxproj">
+      <Project>{881f5aa2-aa84-4d54-8128-e3689ec72a89}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Rk-Math\Rk-Math\Rk-Math.vcxproj">
+      <Project>{75d16917-a5d2-4f65-aa79-5c7bf63025a8}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

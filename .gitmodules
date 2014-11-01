@@ -1,3 +1,9 @@
 [submodule "Catch"]
 	path = Catch
 	url = https://github.com/philsquared/Catch.git
+[submodule "Rk-Core"]
+	path = Rk-Core
+	url = https://github.com/Halfbin/Rk-Core.git
+[submodule "Rk-Math"]
+	path = Rk-Math
+	url = https://github.com/Halfbin/Rk-Math.git
