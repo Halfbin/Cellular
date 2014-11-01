@@ -7,7 +7,7 @@ namespace Ce
 {
   void true_main ();
 
-  extern "C" int main () try
+  /*extern "C" int main () try
   {
     true_main ();
     return 0;
@@ -21,6 +21,6 @@ namespace Ce
   {
     MessageBoxA (0, "Exception", "?", 0);
     return 1;
-  }
+  }*/
 
 }
