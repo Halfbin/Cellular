@@ -70,6 +70,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EntityRenderer.cpp" />
     <ClCompile Include="Entry.cpp" />
     <ClCompile Include="Kernel.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -77,7 +78,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clock.hpp" />
+    <ClInclude Include="Entity.hpp" />
+    <ClInclude Include="EntityRenderer.hpp" />
     <ClInclude Include="Kernel.hpp" />
+    <ClInclude Include="RenderItem.hpp" />
     <ClInclude Include="Syncer.hpp" />
     <ClInclude Include="SimTime.hpp" />
   </ItemGroup>

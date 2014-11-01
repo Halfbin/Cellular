@@ -9,6 +9,9 @@
     <ClCompile Include="Kernel.cpp">
       <Filter>Kernel</Filter>
     </ClCompile>
+    <ClCompile Include="EntityRenderer.cpp">
+      <Filter>Kernel\EntityRenderer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Kernel">
@@ -16,6 +19,9 @@
     </Filter>
     <Filter Include="Kernel\Syncer">
       <UniqueIdentifier>{88c0ecda-0ed9-417b-83a4-4500818f6a88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kernel\EntityRenderer">
+      <UniqueIdentifier>{58a6934f-e19c-4bcd-9f48-11aa350e27ba}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -29,5 +35,10 @@
     <ClInclude Include="Kernel.hpp">
       <Filter>Kernel</Filter>
     </ClInclude>
+    <ClInclude Include="Entity.hpp" />
+    <ClInclude Include="EntityRenderer.hpp">
+      <Filter>Kernel\EntityRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderItem.hpp" />
   </ItemGroup>
 </Project>
