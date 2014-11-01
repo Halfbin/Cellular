@@ -1,16 +1,30 @@
 
-#include <exception>
+#define WIN32_LEAN_AND_MEAN
+#include <Windows.h>
 
-extern "C" __declspec (dllimport) void __stdcall MessageBoxA (void*, const char*, const char*, unsigned);
+#define CATCH_CONFIG_RUNNER
+#include <catch.hpp>
+
+#include <exception>
 
 namespace Ce
 {
   void true_main ();
 
-  /*extern "C" int main () try
+  extern "C" int main (int arg_count, char** args) try
   {
-    true_main ();
-    return 0;
+    if (arg_count > 1 && std::string (args [1]) == "test")
+    {
+      args [1] = "";
+      Catch::Session session;
+      session.applyCommandLine (arg_count, args);
+      return session.run ();
+    }
+    else
+    {
+      true_main ();
+      return 0;
+    }
   }
   catch (std::exception& e)
   {
@@ -21,6 +35,6 @@ namespace Ce
   {
     MessageBoxA (0, "Exception", "?", 0);
     return 1;
-  }*/
+  }
 
 }

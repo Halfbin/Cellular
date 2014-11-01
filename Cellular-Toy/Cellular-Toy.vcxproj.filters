@@ -6,7 +6,6 @@
     <ClCompile Include="Syncer.cpp">
       <Filter>Syncer</Filter>
     </ClCompile>
-    <ClCompile Include="Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Syncer">

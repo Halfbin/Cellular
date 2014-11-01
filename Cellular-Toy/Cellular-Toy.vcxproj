@@ -71,7 +71,6 @@
     <ClCompile Include="Entry.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Syncer.cpp" />
-    <ClCompile Include="Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Syncer.hpp" />
