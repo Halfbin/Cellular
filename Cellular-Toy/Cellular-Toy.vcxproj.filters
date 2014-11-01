@@ -17,5 +17,6 @@
       <Filter>Syncer</Filter>
     </ClInclude>
     <ClInclude Include="SimTime.hpp" />
+    <ClInclude Include="Clock.hpp" />
   </ItemGroup>
 </Project>

@@ -73,6 +73,7 @@
     <ClCompile Include="Syncer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Clock.hpp" />
     <ClInclude Include="Syncer.hpp" />
     <ClInclude Include="SimTime.hpp" />
   </ItemGroup>
