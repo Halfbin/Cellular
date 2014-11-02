@@ -1,11 +1,14 @@
 
 #include "Kernel.hpp"
+#include "Renderer.hpp"
 
 namespace Ce
 {
   void true_main ()
   {
-    Kernel kernel;
+    Renderer renderer;
+    Kernel   kernel (renderer);
+
     kernel.run ();
   }
 

@@ -3,8 +3,11 @@
 
 namespace Ce
 {
-  Kernel::Kernel ()
-  { }
+  Kernel::Kernel (Renderer& renderer) :
+    renderer (renderer)
+  {
+    ents.emplace_back (v2f {12, 34});
+  }
 
   void Kernel::run ()
   {
@@ -24,6 +27,16 @@ namespace Ce
 
         sim_time = after_tick;
       }
+
+      renderer.begin_frame ();
+
+      for (const auto& ent : ents)
+      {
+        auto item = ent_renderer.render_entity (ent);
+        renderer.add_item (item);
+      }
+
+      renderer.end_frame ();
     }
 
   }
