@@ -1,6 +1,5 @@
 
-#define WIN32_LEAN_AND_MEAN
-#include <Windows.h>
+#include "MinWin.hpp"
 
 #define CATCH_CONFIG_RUNNER
 #include <catch.hpp>
