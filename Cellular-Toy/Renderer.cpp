@@ -5,20 +5,10 @@
 
 namespace Ce
 {
-  void Renderer::begin_frame ()
+  void Renderer::render_items (RenderRange range)
   {
-    items.clear ();
-  }
-  
-  void Renderer::end_frame ()
-  {
-    for (const auto& item : items)
+    for (auto item : range)
       std::cout << "(" << item.position.x << ", " << item.position.y << ")\n";
-  }
-
-  void Renderer::add_item (RenderItem item)
-  {
-    items.push_back (item);
   }
 
 }

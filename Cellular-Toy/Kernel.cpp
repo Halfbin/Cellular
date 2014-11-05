@@ -12,8 +12,9 @@ namespace Ce
 
   void Kernel::run ()
   {
-    window.show ();
+    std::vector <RenderItem> render_items;
 
+    window.show ();
     auto sim_time = syncer.initial (clock.read ());
 
     for (;;)
@@ -38,15 +39,15 @@ namespace Ce
         sim_time = after_tick;
       }
 
-      renderer.begin_frame ();
-
+      render_items.clear ();
       for (const auto& ent : ents)
       {
         auto item = ent_renderer.render_entity (ent);
-        renderer.add_item (item);
+        render_items.push_back (item);
       }
 
-      renderer.end_frame ();
+      auto render_range = RenderRange (render_items.data (), render_items.size ());
+      renderer.render_items (render_range);
     }
 
   }

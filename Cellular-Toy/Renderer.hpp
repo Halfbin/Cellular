@@ -3,19 +3,28 @@
 
 #include "RenderItem.hpp"
 
-#include <vector>
-
 namespace Ce
 {
-  class Renderer
+  class RenderRange
   {
-    std::vector <RenderItem> items;
+    const RenderItem* begin_;
+    const RenderItem* end_;
 
   public:
-    void begin_frame ();
-    void end_frame ();
+    RenderRange (const RenderItem* first, size_t count) :
+      begin_ (first),
+      end_   (first + count)
+    { }
 
-    void add_item (RenderItem item);
+    const RenderItem* begin () const { return begin_; }
+    const RenderItem* end   () const { return end_; }
+
+  };
+
+  class Renderer
+  {
+  public:
+    void render_items (RenderRange);
 
   };
 
