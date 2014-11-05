@@ -3,7 +3,8 @@
 
 namespace Ce
 {
-  Kernel::Kernel (Renderer& renderer) :
+  Kernel::Kernel (Window& window, Renderer& renderer) :
+    window   (window),
     renderer (renderer)
   {
     ents.emplace_back (v2f {12, 34});
@@ -11,10 +12,19 @@ namespace Ce
 
   void Kernel::run ()
   {
+    window.show ();
+
     auto sim_time = syncer.initial (clock.read ());
 
     for (;;)
     {
+      auto update = window.pump ();
+
+      if (update.closed)
+        break;
+
+      // handle input
+
       sim_time = syncer.update (sim_time, clock.read (), clock.frequency (), 0.25f);
 
       for (;;)

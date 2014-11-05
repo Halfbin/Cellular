@@ -6,6 +6,7 @@
 #include "EntityRenderer.hpp"
 #include "Renderer.hpp"
 #include "Syncer.hpp"
+#include "Window.hpp"
 #include "Clock.hpp"
 
 namespace Ce
@@ -13,6 +14,7 @@ namespace Ce
   class Kernel
   {
     // Other cells
+    Window&   window;
     Renderer& renderer;
 
     // External
@@ -26,7 +28,7 @@ namespace Ce
     std::vector <Entity> ents;
 
   public:
-    Kernel (Renderer&);
+    Kernel (Window&, Renderer&);
 
     void run ();
 

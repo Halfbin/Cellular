@@ -4,50 +4,117 @@
     <ClCompile Include="Entry.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Syncer.cpp">
-      <Filter>Kernel\Syncer</Filter>
+      <Filter>Cells\Kernel\Syncer</Filter>
     </ClCompile>
     <ClCompile Include="Kernel.cpp">
-      <Filter>Kernel</Filter>
+      <Filter>Cells\Kernel</Filter>
     </ClCompile>
     <ClCompile Include="EntityRenderer.cpp">
-      <Filter>Kernel\EntityRenderer</Filter>
+      <Filter>Cells\Kernel\EntityRenderer</Filter>
     </ClCompile>
     <ClCompile Include="Renderer.cpp">
-      <Filter>Renderer</Filter>
+      <Filter>Cells\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Externals\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowImpl.cpp">
+      <Filter>Externals\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>Externals\Window\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Externals\Window\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Externals\Window\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="EventQueue.cpp">
+      <Filter>Shared\EventQueue</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Kernel">
+    <Filter Include="Cells">
+      <UniqueIdentifier>{0b1c994a-bc14-4c22-a11b-815b57e9b16e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cells\Kernel">
       <UniqueIdentifier>{70a65b34-6c3a-453f-8dd7-aed53fe80e51}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Kernel\Syncer">
+    <Filter Include="Cells\Kernel\Syncer">
       <UniqueIdentifier>{88c0ecda-0ed9-417b-83a4-4500818f6a88}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Kernel\EntityRenderer">
+    <Filter Include="Cells\Kernel\EntityRenderer">
       <UniqueIdentifier>{58a6934f-e19c-4bcd-9f48-11aa350e27ba}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Renderer">
+    <Filter Include="Cells\Renderer">
       <UniqueIdentifier>{f521230c-782d-4d6b-80f4-26ba5d5bdadb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{00084f1b-4f73-4024-a785-150bd9c9dabf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals">
+      <UniqueIdentifier>{9dc7a5a1-29ae-4276-ab32-a3ab1c41b42d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\Window">
+      <UniqueIdentifier>{6385140d-2283-42e4-a132-65aaa0e4e127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\Window\Input">
+      <UniqueIdentifier>{b157b953-b4d1-45e0-ad9f-90353a09489f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\EventQueue">
+      <UniqueIdentifier>{3709e135-b9f7-44bf-8931-f39303134d54}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Syncer.hpp">
-      <Filter>Kernel\Syncer</Filter>
+      <Filter>Cells\Kernel\Syncer</Filter>
     </ClInclude>
-    <ClInclude Include="SimTime.hpp" />
     <ClInclude Include="Clock.hpp">
-      <Filter>Kernel</Filter>
+      <Filter>Cells\Kernel</Filter>
     </ClInclude>
     <ClInclude Include="Kernel.hpp">
-      <Filter>Kernel</Filter>
+      <Filter>Cells\Kernel</Filter>
     </ClInclude>
-    <ClInclude Include="Entity.hpp" />
     <ClInclude Include="EntityRenderer.hpp">
-      <Filter>Kernel\EntityRenderer</Filter>
+      <Filter>Cells\Kernel\EntityRenderer</Filter>
     </ClInclude>
-    <ClInclude Include="RenderItem.hpp" />
     <ClInclude Include="Renderer.hpp">
-      <Filter>Renderer</Filter>
+      <Filter>Cells\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.hpp">
+      <Filter>Externals\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderItem.hpp">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="SimTime.hpp">
+      <Filter>Cells\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.hpp">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.hpp">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.hpp">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="MinWin.hpp" />
+    <ClInclude Include="WindowImpl.hpp">
+      <Filter>Externals\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.hpp">
+      <Filter>Externals\Window\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.hpp">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="EventQueue.hpp">
+      <Filter>Shared\EventQueue</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
