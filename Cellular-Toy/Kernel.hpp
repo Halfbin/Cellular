@@ -4,6 +4,7 @@
 #include <vector>
 
 #include "EntityRenderer.hpp"
+#include "GLContext.hpp"
 #include "Renderer.hpp"
 #include "Syncer.hpp"
 #include "Window.hpp"
@@ -14,8 +15,9 @@ namespace Ce
   class Kernel
   {
     // Other cells
-    Window&   window;
-    Renderer& renderer;
+    Window&    window;
+    GLContext& gl;
+    Renderer&  renderer;
 
     // External
     Clock clock;
@@ -28,7 +30,7 @@ namespace Ce
     std::vector <Entity> ents;
 
   public:
-    Kernel (Window&, Renderer&);
+    Kernel (Window&, GLContext&, Renderer&);
 
     void run ();
 

@@ -10,16 +10,16 @@ namespace Ce
 {
   void true_main ();
 
-  extern "C" int main (int arg_count, char** args) try
+  extern "C" int WINAPI WinMain (HINSTANCE, HINSTANCE, const char* cline, unsigned) try
   {
-    if (arg_count > 1 && std::string (args [1]) == "test")
+    /*if (arg_count > 1 && std::string (args [1]) == "test")
     {
       args [1] = "";
       Catch::Session session;
       session.applyCommandLine (arg_count, args);
       return session.run ();
     }
-    else
+    else*/
     {
       true_main ();
       return 0;

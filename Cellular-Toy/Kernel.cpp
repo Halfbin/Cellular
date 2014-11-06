@@ -3,8 +3,9 @@
 
 namespace Ce
 {
-  Kernel::Kernel (Window& window, Renderer& renderer) :
+  Kernel::Kernel (Window& window, GLContext& gl, Renderer& renderer) :
     window   (window),
+    gl       (gl),
     renderer (renderer)
   {
     ents.emplace_back (v2f {12, 34});
@@ -47,7 +48,8 @@ namespace Ce
       }
 
       auto render_range = RenderRange (render_items.data (), render_items.size ());
-      renderer.render_items (render_range);
+      renderer.render_frame (update.size, render_range);
+      gl.flip ();
     }
 
   }

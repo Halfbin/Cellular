@@ -30,6 +30,8 @@ namespace Ce
     Window (Rk::cstring_ref title);
     ~Window ();
 
+    uptr handle () const;
+
     WindowUpdate pump ();
 
     void show ();

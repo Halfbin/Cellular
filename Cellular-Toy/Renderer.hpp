@@ -24,7 +24,7 @@ namespace Ce
   class Renderer
   {
   public:
-    void render_items (RenderRange);
+    void render_frame (v2i size, RenderRange);
 
   };
 

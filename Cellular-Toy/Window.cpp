@@ -12,6 +12,11 @@ namespace Ce
     delete impl;
   }
 
+  uptr Window::handle () const
+  {
+    return (uptr) impl->window;
+  }
+
   WindowUpdate Window::pump ()
   {
     return impl->pump ();

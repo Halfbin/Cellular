@@ -33,6 +33,9 @@
     <ClCompile Include="EventQueue.cpp">
       <Filter>Shared\EventQueue</Filter>
     </ClCompile>
+    <ClCompile Include="GLContext.cpp">
+      <Filter>Externals\GLContext</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Cells">
@@ -46,9 +49,6 @@
     </Filter>
     <Filter Include="Cells\Kernel\EntityRenderer">
       <UniqueIdentifier>{58a6934f-e19c-4bcd-9f48-11aa350e27ba}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Cells\Renderer">
-      <UniqueIdentifier>{f521230c-782d-4d6b-80f4-26ba5d5bdadb}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared">
       <UniqueIdentifier>{00084f1b-4f73-4024-a785-150bd9c9dabf}</UniqueIdentifier>
@@ -64,6 +64,12 @@
     </Filter>
     <Filter Include="Shared\EventQueue">
       <UniqueIdentifier>{3709e135-b9f7-44bf-8931-f39303134d54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\GLContext">
+      <UniqueIdentifier>{7eb253a0-e3dc-43a7-b9e7-609db33800ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cells\Renderer">
+      <UniqueIdentifier>{f521230c-782d-4d6b-80f4-26ba5d5bdadb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +121,12 @@
     </ClInclude>
     <ClInclude Include="EventQueue.hpp">
       <Filter>Shared\EventQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="GLContext.hpp">
+      <Filter>Externals\GLContext</Filter>
+    </ClInclude>
+    <ClInclude Include="GLError.hpp">
+      <Filter>Shared</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
