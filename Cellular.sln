@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rk-Core", "Rk-Core\Rk-Core\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rk-Math", "Rk-Math\Rk-Math\Rk-Math.vcxproj", "{75D16917-A5D2-4F65-AA79-5C7BF63025A8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cellular-Server", "Cellular-Server\Cellular-Server.vcxproj", "{9F88357F-818B-47A3-9761-353330843D6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -41,6 +43,14 @@ Global
 		{75D16917-A5D2-4F65-AA79-5C7BF63025A8}.Release|Win32.Build.0 = Release|Win32
 		{75D16917-A5D2-4F65-AA79-5C7BF63025A8}.Release|x64.ActiveCfg = Release|x64
 		{75D16917-A5D2-4F65-AA79-5C7BF63025A8}.Release|x64.Build.0 = Release|x64
+		{9F88357F-818B-47A3-9761-353330843D6A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9F88357F-818B-47A3-9761-353330843D6A}.Debug|Win32.Build.0 = Debug|Win32
+		{9F88357F-818B-47A3-9761-353330843D6A}.Debug|x64.ActiveCfg = Debug|x64
+		{9F88357F-818B-47A3-9761-353330843D6A}.Debug|x64.Build.0 = Debug|x64
+		{9F88357F-818B-47A3-9761-353330843D6A}.Release|Win32.ActiveCfg = Release|Win32
+		{9F88357F-818B-47A3-9761-353330843D6A}.Release|Win32.Build.0 = Release|Win32
+		{9F88357F-818B-47A3-9761-353330843D6A}.Release|x64.ActiveCfg = Release|x64
+		{9F88357F-818B-47A3-9761-353330843D6A}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

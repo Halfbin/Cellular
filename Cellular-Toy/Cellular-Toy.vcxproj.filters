@@ -109,7 +109,6 @@
     <ClInclude Include="Input.hpp">
       <Filter>Shared</Filter>
     </ClInclude>
-    <ClInclude Include="MinWin.hpp" />
     <ClInclude Include="WindowImpl.hpp">
       <Filter>Externals\Window</Filter>
     </ClInclude>

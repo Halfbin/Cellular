@@ -1,7 +1,8 @@
 
 #pragma once
 
-#include "MinWin.hpp"
+#include <Ce/MinWin.hpp>
+
 #include "Input.hpp"
 
 #include <vector>

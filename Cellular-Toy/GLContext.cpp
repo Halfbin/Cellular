@@ -4,7 +4,7 @@
 #include <Rk/exception.hpp>
 #include <Rk/guard.hpp>
 
-#include "MinWin.hpp"
+#include <Ce/MinWin.hpp>
 
 #include <GL/glew.h>
 #include <GL/wglew.h>

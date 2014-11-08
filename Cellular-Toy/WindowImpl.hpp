@@ -4,7 +4,8 @@
 #include "Window.hpp"
 
 #include "InputSystem.hpp"
-#include "MinWin.hpp"
+
+#include <Ce/MinWin.hpp>
 
 namespace Ce
 {
