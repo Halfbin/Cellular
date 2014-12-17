@@ -1,6 +1,8 @@
 
 #pragma once
 
+#include "Mesh.hpp"
+
 #include <Rk/vector.hpp>
 
 namespace Ce
@@ -8,11 +10,9 @@ namespace Ce
   class RenderItem
   {
   public:
-    v2f position;
-
-    explicit RenderItem (v2f pos) :
-      position (pos)
-    { }
+    MeshRange meshes;
+    uint      program;
+    v2f       position;
 
   };
 

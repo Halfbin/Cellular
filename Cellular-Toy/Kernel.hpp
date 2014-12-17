@@ -3,9 +3,9 @@
 
 #include <vector>
 
-#include "EntityRenderer.hpp"
 #include "GLContext.hpp"
 #include "Renderer.hpp"
+#include "Entity.hpp"
 #include "Syncer.hpp"
 #include "Window.hpp"
 #include "Clock.hpp"
@@ -23,8 +23,7 @@ namespace Ce
     Clock clock;
 
     // Internals
-    Syncer         syncer;
-    EntityRenderer ent_renderer;
+    Syncer syncer;
 
     // State
     std::vector <Entity> ents;

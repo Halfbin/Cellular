@@ -18,20 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F1BA08BD-C38C-436C-B716-E890E47D9B18}</ProjectGuid>
     <RootNamespace>CellularToy</RootNamespace>
   </PropertyGroup>
-
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-
   <PropertyGroup>
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>CTP_Nov2013</PlatformToolset>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
   </PropertyGroup>
@@ -39,21 +35,16 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
-
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\Catch.props" />
     <Import Project="..\Cellular.props" />
   </ImportGroup>
-
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
-
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -82,9 +73,8 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-
   <ItemGroup>
-    <ClCompile Include="EntityRenderer.cpp" />
+    <ClCompile Include="EntityFigure.cpp" />
     <ClCompile Include="Entry.cpp" />
     <ClCompile Include="EventQueue.cpp" />
     <ClCompile Include="GLContext.cpp" />
@@ -99,9 +89,10 @@
     <ClCompile Include="InputSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Buffer.hpp" />
     <ClInclude Include="Clock.hpp" />
     <ClInclude Include="Entity.hpp" />
-    <ClInclude Include="EntityRenderer.hpp" />
+    <ClInclude Include="EntityFigure.hpp" />
     <ClInclude Include="GLContext.hpp" />
     <ClInclude Include="GLError.hpp" />
     <ClInclude Include="Input.hpp" />
@@ -110,6 +101,7 @@
     <ClInclude Include="InputSystem.hpp" />
     <ClInclude Include="Kernel.hpp" />
     <ClInclude Include="Keyboard.hpp" />
+    <ClInclude Include="Mesh.hpp" />
     <ClInclude Include="Mouse.hpp" />
     <ClInclude Include="Renderer.hpp" />
     <ClInclude Include="RenderItem.hpp" />
@@ -118,7 +110,6 @@
     <ClInclude Include="Window.hpp" />
     <ClInclude Include="WindowImpl.hpp" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Rk-Core\Rk-Core\Rk-Core.vcxproj">
       <Project>{881f5aa2-aa84-4d54-8128-e3689ec72a89}</Project>
@@ -127,7 +118,6 @@
       <Project>{75d16917-a5d2-4f65-aa79-5c7bf63025a8}</Project>
     </ProjectReference>
   </ItemGroup>
-
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,10 +1,19 @@
 
 #pragma once
 
+#include <Rk/matrix.hpp>
+
 #include "RenderItem.hpp"
 
 namespace Ce
 {
+  struct FrameParams
+  {
+    v2i frame_size;
+    m4f world_to_eye;
+    m4f eye_to_clip;
+  };
+
   class RenderRange
   {
     const RenderItem* begin_;
@@ -23,8 +32,14 @@ namespace Ce
 
   class Renderer
   {
+    struct Impl;
+    Impl* impl;
+
   public:
-    void render_frame (v2i size, RenderRange);
+    Renderer ();
+    ~Renderer ();
+
+    void render_frame (FrameParams, RenderRange);
 
   };
 

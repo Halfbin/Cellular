@@ -9,9 +9,6 @@
     <ClCompile Include="Kernel.cpp">
       <Filter>Cells\Kernel</Filter>
     </ClCompile>
-    <ClCompile Include="EntityRenderer.cpp">
-      <Filter>Cells\Kernel\EntityRenderer</Filter>
-    </ClCompile>
     <ClCompile Include="Renderer.cpp">
       <Filter>Cells\Renderer</Filter>
     </ClCompile>
@@ -35,6 +32,9 @@
     </ClCompile>
     <ClCompile Include="GLContext.cpp">
       <Filter>Externals\GLContext</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityFigure.cpp">
+      <Filter>Cells\Kernel\EntityRenderer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -82,9 +82,6 @@
     <ClInclude Include="Kernel.hpp">
       <Filter>Cells\Kernel</Filter>
     </ClInclude>
-    <ClInclude Include="EntityRenderer.hpp">
-      <Filter>Cells\Kernel\EntityRenderer</Filter>
-    </ClInclude>
     <ClInclude Include="Renderer.hpp">
       <Filter>Cells\Renderer</Filter>
     </ClInclude>
@@ -126,6 +123,13 @@
     </ClInclude>
     <ClInclude Include="GLError.hpp">
       <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.hpp">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.hpp" />
+    <ClInclude Include="EntityFigure.hpp">
+      <Filter>Cells\Kernel\EntityRenderer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
